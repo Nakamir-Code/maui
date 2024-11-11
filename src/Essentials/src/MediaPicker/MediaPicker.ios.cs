@@ -69,6 +69,7 @@ namespace Microsoft.Maui.Media
 			var vc = WindowStateManager.Default.GetCurrentUIViewController(true);
 
 			picker = new UIImagePickerController();
+			picker.VideoQuality = UIImagePickerControllerQualityType.High;
 			picker.SourceType = sourceType;
 			picker.MediaTypes = new string[] { mediaType };
 			picker.AllowsEditing = false;
